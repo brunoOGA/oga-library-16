@@ -1,12 +1,17 @@
-import React, { useEffect } from 'react'
-import RNModuleTemplateModule, { Counter } from 'oga-library-16'
+import React from 'react'
+import { Button, Card } from 'oga-library-16'
 
 const App = () => {
-  useEffect(() => {
-    console.log(RNModuleTemplateModule)
-  })
-
-  return <Counter buttonTitle='Greetings' />
+  return (
+    <>
+      <Button
+        text='Greetings'
+        disabled={true}
+        onPress={() => console.log('TESTE')}
+      />
+      <Card />
+    </>
+  )
 }
 
 export default App
