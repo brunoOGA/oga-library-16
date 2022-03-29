@@ -5,16 +5,14 @@
   "homepage": "https://github.com/brunoOGA/oga-library-16#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "directories": {
-    "core": "lib/core",
-    "cards": "src/cards"
-  },
   "author": "Bruno Arruda <bruno.ogarruda@gmail.com>",
   "license": "MIT",
   "files": [
     "android",
     "ios",
-    "lib",
+    "lib/core",
+    "lib/cards",
+    "lib/tokens",
     "oga-library-16.podspec",
     "!android/build",
     "!.DS_Store",
