@@ -1,11 +1,12 @@
 import React from 'react'
 
+import { globalTokens } from '../../../tokens'
 import { StyledButton, StyledText } from './Button.styles'
 import { IButtonProps } from './Button.types'
 
 const Button: React.FC<IButtonProps> = ({
   text,
-  color = '#764abc',
+  color = globalTokens.brandColorPrimaryLight,
   size = 'medium',
   disabled = false,
   onPress,

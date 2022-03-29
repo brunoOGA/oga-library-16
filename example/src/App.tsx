@@ -1,16 +1,16 @@
 import React from 'react'
-import { Button, Card } from 'oga-library-16'
+import { Core, Tokens } from 'oga-library-16'
+import { View } from 'react-native'
 
 const App = () => {
   return (
-    <>
-      <Button
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Core.Button
         text='Greetings'
-        disabled={true}
+        color={Tokens.globalTokens.brandColorPrimaryDark}
         onPress={() => console.log('TESTE')}
       />
-      <Card />
-    </>
+    </View>
   )
 }
 
